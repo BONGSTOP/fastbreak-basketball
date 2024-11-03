@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Sports World";
+  src: url("https://www.fontsaddict.com/fontface/sports-world.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
