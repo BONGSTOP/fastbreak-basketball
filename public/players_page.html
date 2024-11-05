@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen bg-center bg-black">
+    <!-- Nav Bar -->
+    <div
+      id="navbarP"
+      class="min-w-[100vw] sticky top-0 z-50 bg-black border-gray-200 dark:bg-gray-900 lg:px-20 py-5"
+    >
+      <nav>
+        <div class="flex flex-wrap items-center justify-between mx-auto p-4">
+          <a
+            href="../public/top100.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="../image/fastbreak.png"
+              class="h-16"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-md lg:text-xl font-semibold text-wrap text-white max-w-max"
+              >FASTBREAK BASKETBALL</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <div class="md:flex md:items-center md:space-x-4">
+              <div class="relative rounded-md md:flex md:items-center md:mr-4">
+                <input
+                  type="text"
+                  class="block p-2 w-full md:w-64 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Search..."
+                />
+                <button
+                  type="button"
+                  class="absolute inset-y-0 right-0 flex items-center pr-3"
+                >
+                  <svg
+                    class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <ul
+                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700"
+              >
+                <li>
+                  <a
+                    href="top100.html"
+                    class="block py-2 px-3 text-white rounded hover:bg-red md:hover:bg-transparent md:border-0 md:hover:text-red md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#game-background"
+                    class="block py-2 px-3 text-white rounded hover:bg-red md:hover:bg-transparent md:border-0 md:hover:text-red md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Games</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#players"
+                    class="block py-2 px-3 text-white rounded hover:bg-red md:hover:bg-transparent md:border-0 md:hover:text-red md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Players</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#teams"
+                    class="block py-2 px-3 text-white rounded hover:bg-red md:hover:bg-transparent md:border-0 md:hover:text-red md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Teams</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="block py-2 px-3 text-white rounded hover:bg-red md:hover:bg-transparent md:border-0 md:hover:text-red md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Heading -->
+    <div class="font-bold flex justify-center mt-10">
+      <h1 class="text-white text-3xl">PLAYER LIST</h1>
+    </div>
+
+    <div class="font-bold flex justify-center">
+      <!--ALL PLAYERS BUTTON-->
+      <div>
+        <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="dropdownPlayers"
+          class="text-white bg-transparent focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          type="button"
+        >
+          All Players
+          <svg
+            class="w-2.5 h-2.5 ms-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 4 4 4-4"
+            />
+          </svg>
+        </button>
+
+        <!-- All Players Dropdown menu -->
+        <div
+          id="dropdownPlayers"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200 max-h-60 overflow-y-auto"
+            aria-labelledby="dropdownDefaultButton"
+          >
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >A</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >B</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >C</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >D</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >E</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >F</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >G</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >H</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >I</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >J</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >K</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >L</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >M</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >N</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >N</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >O</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >P</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Q</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >R</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >S</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >T</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >U</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >V</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >X</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Z</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--ALL TEAMS BUTTON-->
+      <div>
+        <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="dropdownTeams"
+          class="text-white bg-transparent focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          type="button"
+        >
+          All Teams
+          <svg
+            class="w-2.5 h-2.5 ms-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 4 4 4-4"
+            />
+          </svg>
+        </button>
+
+        <!-- All Teams Dropdown menu -->
+        <div
+          id="dropdownTeams"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200 max-h-60 overflow-y-auto"
+            aria-labelledby="dropdownDefaultButton"
+          >
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Atlanta Hawks</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Boston Celtics</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Brooklyn Nets</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Charlotte Hornets</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Chicago Bulls</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Clevelang Cavaliers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Dallas Mavericks</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Denver Nuggets</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Detroit Pistons</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Golden State Warriors</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Houston Rockets</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Indiana Pacers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >LA Clippers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >LA Lakers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Memphis Grizzlies</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Miami Heat</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Milwaukee Bucks</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Minesota Timberwolves</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >New Orleans Pelicans</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >New York Knicks</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Oklahoma City Thunders</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Orlando Magic</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Philadelphia 76ers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Phoenix Suns</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Portland Trail Blazers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Sacramento Kings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >San Antonio Spurs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Toronto Raptors</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Utah Jazz</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Washington Wizards</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--ALL POSITIONS BUTTON-->
+      <div>
+        <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="dropdownPosition"
+          class="text-white bg-transparent focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          type="button"
+        >
+          All Positions
+          <svg
+            class="w-2.5 h-2.5 ms-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 4 4 4-4"
+            />
+          </svg>
+        </button>
+
+        <!-- All Positions Dropdown menu -->
+        <div
+          id="dropdownPosition"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownDefaultButton"
+          >
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Point Guard</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Shooting Guard</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Small Forward</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Power Forward</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Center</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section
+      id="player-list"
+      class="justify-center flex flex-col items-center text-white py-10 bg-black bg-no-repeat bg-cover bg-center"
+      style="
+        background-image: url(../image/Player_page/Player_page_background.jpg);
+      "
+    >
+      <div>
+        <h2 class="text-3xl font-bold mb-8 text-center">NBA GAMES</h2>
+      </div>
+      <div class="flex flex-wrap justify-center gap-5 w-[100%]">
+        <!--GAME 1-->
+        <div class="card bg-zinc w-96 shadow-xl">
+          <figure>
+            <img src="../image/mj.jpg" alt="Player" />
+          </figure>
+          <div class="card-body">
+            <div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+            </div>
+            <h2 class="card-title text-white">Michael Jordan</h2>
+            <p
+              class="text-white text-start read-more-text max-h[50px] overflow-hidden"
+              style="max-height: 50px; overflow: hidden"
+            >
+              Nicknamed "King James", he is widely recognized as one of the
+              greatest players in the sport's history and is often compared with
+              Michael Jordan in debates over the greatest basketball player of
+              all time. James has won four NBA championships from 10 NBA Finals
+              appearances, having made eight consecutive appearances between
+              2011 and 2018. He also won the inaugural NBA Cup in 2023 with the
+              Lakers and three Olympic gold medals as a member of the U.S.
+              national team.
+            </p>
+            <span class="text-white read-more-btn cursor-pointer"
+              >Read More..</span
+            >
+            <div class="card-actions justify-center mt-4">
+              <button class="btn bg-transparent text-white hover:text-red">
+                View Stats
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--GAME 2-->
+        <div class="card bg-zinc w-96 shadow-xl">
+          <figure>
+            <img src="../image/mj.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+            </div>
+            <h2 class="card-title text-white">Michael Jordan</h2>
+            <p
+              class="text-white text-start read-more-text max-h[50px] overflow-hidden"
+              style="max-height: 50px; overflow: hidden"
+            >
+              Nicknamed "King James", he is widely recognized as one of the
+              greatest players in the sport's history and is often compared with
+              Michael Jordan in debates over the greatest basketball player of
+              all time. James has won four NBA championships from 10 NBA Finals
+              appearances, having made eight consecutive appearances between
+              2011 and 2018. He also won the inaugural NBA Cup in 2023 with the
+              Lakers and three Olympic gold medals as a member of the U.S.
+              national team.
+            </p>
+            <span class="text-white read-more-btn cursor-pointer"
+              >Read More..</span
+            >
+            <div class="card-actions justify-center mt-4">
+              <button class="btn bg-transparent text-white hover:text-red">
+                View Stats
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--GAME 3-->
+        <div class="card bg-zinc w-96 shadow-xl">
+          <figure>
+            <img src="../image/mj.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+            </div>
+            <h2 class="card-title text-white">Michael Jordan</h2>
+            <p
+              class="text-white text-start read-more-text max-h[50px] overflow-hidden"
+              style="max-height: 50px; overflow: hidden"
+            >
+              Nicknamed "King James", he is widely recognized as one of the
+              greatest players in the sport's history and is often compared with
+              Michael Jordan in debates over the greatest basketball player of
+              all time. James has won four NBA championships from 10 NBA Finals
+              appearances, having made eight consecutive appearances between
+              2011 and 2018. He also won the inaugural NBA Cup in 2023 with the
+              Lakers and three Olympic gold medals as a member of the U.S.
+              national team.
+            </p>
+            <span class="text-white read-more-btn cursor-pointer"
+              >Read More..</span
+            >
+            <div class="card-actions justify-center mt-4">
+              <button class="btn bg-transparent text-white hover:text-red">
+                View Stats
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--GAME 4-->
+        <div class="card bg-zinc w-96 shadow-xl">
+          <figure>
+            <img src="../image/mj.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+            </div>
+            <h2 class="card-title text-white">Michael Jordan</h2>
+            <p
+              class="text-white text-start read-more-text max-h[50px] overflow-hidden"
+              style="max-height: 50px; overflow: hidden"
+            >
+              Nicknamed "King James", he is widely recognized as one of the
+              greatest players in the sport's history and is often compared with
+              Michael Jordan in debates over the greatest basketball player of
+              all time. James has won four NBA championships from 10 NBA Finals
+              appearances, having made eight consecutive appearances between
+              2011 and 2018. He also won the inaugural NBA Cup in 2023 with the
+              Lakers and three Olympic gold medals as a member of the U.S.
+              national team.
+            </p>
+            <span class="text-white read-more-btn cursor-pointer"
+              >Read More..</span
+            >
+            <div class="card-actions justify-center mt-4">
+              <button class="btn bg-transparent text-white hover:text-red">
+                View Stats
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--GAME 5-->
+        <div class="card bg-zinc w-96 shadow-xl">
+          <figure>
+            <img src="../image/mj.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+            </div>
+            <h2 class="card-title text-white">Michael Jordan</h2>
+            <p
+              class="text-white text-start read-more-text max-h[50px] overflow-hidden"
+              style="max-height: 50px; overflow: hidden"
+            >
+              Nicknamed "King James", he is widely recognized as one of the
+              greatest players in the sport's history and is often compared with
+              Michael Jordan in debates over the greatest basketball player of
+              all time. James has won four NBA championships from 10 NBA Finals
+              appearances, having made eight consecutive appearances between
+              2011 and 2018. He also won the inaugural NBA Cup in 2023 with the
+              Lakers and three Olympic gold medals as a member of the U.S.
+              national team.
+            </p>
+            <span class="text-white read-more-btn cursor-pointer"
+              >Read More..</span
+            >
+            <div class="card-actions justify-center mt-4">
+              <button class="btn bg-transparent text-white hover:text-red">
+                View Stats
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--GAME 6-->
+        <div class="card bg-zinc w-96 shadow-xl">
+          <figure>
+            <img src="../image/mj.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+            </div>
+            <h2 class="card-title text-white">Michael Jordan</h2>
+            <p
+              class="text-white text-start read-more-text max-h[50px] overflow-hidden"
+              style="max-height: 50px; overflow: hidden"
+            >
+              Nicknamed "King James", he is widely recognized as one of the
+              greatest players in the sport's history and is often compared with
+              Michael Jordan in debates over the greatest basketball player of
+              all time. James has won four NBA championships from 10 NBA Finals
+              appearances, having made eight consecutive appearances between
+              2011 and 2018. He also won the inaugural NBA Cup in 2023 with the
+              Lakers and three Olympic gold medals as a member of the U.S.
+              national team.
+            </p>
+            <span class="text-white read-more-btn cursor-pointer"
+              >Read More..</span
+            >
+            <div class="card-actions justify-center mt-4">
+              <button class="btn bg-transparent text-white hover:text-red">
+                View Stats
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--GAME 7-->
+        <div class="card bg-zinc w-96 shadow-xl">
+          <figure>
+            <img src="../image/mj.jpg" alt="Player" />
+          </figure>
+          <div class="card-body">
+            <div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+            </div>
+            <h2 class="card-title text-white">Michael Jordan</h2>
+            <p
+              class="text-white text-start read-more-text max-h[50px] overflow-hidden"
+              style="max-height: 50px; overflow: hidden"
+            >
+              Nicknamed "King James", he is widely recognized as one of the
+              greatest players in the sport's history and is often compared with
+              Michael Jordan in debates over the greatest basketball player of
+              all time. James has won four NBA championships from 10 NBA Finals
+              appearances, having made eight consecutive appearances between
+              2011 and 2018. He also won the inaugural NBA Cup in 2023 with the
+              Lakers and three Olympic gold medals as a member of the U.S.
+              national team.
+            </p>
+            <span class="text-white read-more-btn cursor-pointer"
+              >Read More..</span
+            >
+            <div class="card-actions justify-center mt-4">
+              <button class="btn bg-transparent text-white hover:text-red">
+                View Stats
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--GAME 8-->
+        <div class="card bg-zinc w-96 shadow-xl">
+          <figure>
+            <img src="../image/mj.jpg" alt="Player" />
+          </figure>
+          <div class="card-body">
+            <div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+            </div>
+            <h2 class="card-title text-white">Michael Jordan</h2>
+            <p
+              class="text-white text-start read-more-text max-h[50px] overflow-hidden"
+              style="max-height: 50px; overflow: hidden"
+            >
+              Nicknamed "King James", he is widely recognized as one of the
+              greatest players in the sport's history and is often compared with
+              Michael Jordan in debates over the greatest basketball player of
+              all time. James has won four NBA championships from 10 NBA Finals
+              appearances, having made eight consecutive appearances between
+              2011 and 2018. He also won the inaugural NBA Cup in 2023 with the
+              Lakers and three Olympic gold medals as a member of the U.S.
+              national team.
+            </p>
+            <span class="text-white read-more-btn cursor-pointer"
+              >Read More..</span
+            >
+            <div class="card-actions justify-center mt-4">
+              <button class="btn bg-transparent text-white hover:text-red">
+                View Stats
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--GAME 9-->
+        <div class="card bg-zinc w-96 shadow-xl">
+          <figure>
+            <img src="../image/mj.jpg" alt="Player" />
+          </figure>
+          <div class="card-body">
+            <div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+            </div>
+            <h2 class="card-title text-white">Michael Jordan</h2>
+            <p
+              class="text-white text-start read-more-text max-h[50px] overflow-hidden"
+              style="max-height: 50px; overflow: hidden"
+            >
+              Nicknamed "King James", he is widely recognized as one of the
+              greatest players in the sport's history and is often compared with
+              Michael Jordan in debates over the greatest basketball player of
+              all time. James has won four NBA championships from 10 NBA Finals
+              appearances, having made eight consecutive appearances between
+              2011 and 2018. He also won the inaugural NBA Cup in 2023 with the
+              Lakers and three Olympic gold medals as a member of the U.S.
+              national team.
+            </p>
+            <span class="text-white read-more-btn cursor-pointer"
+              >Read More..</span
+            >
+            <div class="card-actions justify-center mt-4">
+              <button class="btn bg-transparent text-white hover:text-red">
+                View Stats
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--GAME 10-->
+        <div class="card bg-zinc w-96 shadow-xl">
+          <figure>
+            <img src="../image/mj.jpg" alt="Player" />
+          </figure>
+          <div class="card-body">
+            <div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+            </div>
+            <h2 class="card-title text-white">Michael Jordan</h2>
+            <p
+              class="text-white text-start read-more-text max-h[50px] overflow-hidden"
+              style="max-height: 50px; overflow: hidden"
+            >
+              Nicknamed "King James", he is widely recognized as one of the
+              greatest players in the sport's history and is often compared with
+              Michael Jordan in debates over the greatest basketball player of
+              all time. James has won four NBA championships from 10 NBA Finals
+              appearances, having made eight consecutive appearances between
+              2011 and 2018. He also won the inaugural NBA Cup in 2023 with the
+              Lakers and three Olympic gold medals as a member of the U.S.
+              national team.
+            </p>
+            <span class="text-white read-more-btn cursor-pointer"
+              >Read More..</span
+            >
+            <div class="card-actions justify-center mt-4">
+              <button class="btn bg-transparent text-white hover:text-red">
+                View Stats
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--GAME 11-->
+        <div class="card bg-zinc w-96 shadow-xl">
+          <figure>
+            <img src="../image/mj.jpg" alt="Player" />
+          </figure>
+          <div class="card-body">
+            <div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+            </div>
+            <h2 class="card-title text-white">Michael Jordan</h2>
+            <p
+              class="text-white text-start read-more-text max-h[50px] overflow-hidden"
+              style="max-height: 50px; overflow: hidden"
+            >
+              Nicknamed "King James", he is widely recognized as one of the
+              greatest players in the sport's history and is often compared with
+              Michael Jordan in debates over the greatest basketball player of
+              all time. James has won four NBA championships from 10 NBA Finals
+              appearances, having made eight consecutive appearances between
+              2011 and 2018. He also won the inaugural NBA Cup in 2023 with the
+              Lakers and three Olympic gold medals as a member of the U.S.
+              national team.
+            </p>
+            <span class="text-white read-more-btn cursor-pointer"
+              >Read More..</span
+            >
+            <div class="card-actions justify-center mt-4">
+              <button class="btn bg-transparent text-white hover:text-red">
+                View Stats
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--GAME 12-->
+        <div class="card bg-zinc w-96 shadow-xl">
+          <figure>
+            <img src="../image/mj.jpg" alt="Player" />
+          </figure>
+          <div class="card-body">
+            <div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+              <div class="badge badge-outline-white bg-transparent text-white">
+                Small Forward
+              </div>
+            </div>
+            <h2 class="card-title text-white">Michael Jordan</h2>
+            <p
+              class="text-white text-start read-more-text max-h[50px] overflow-hidden"
+              style="max-height: 50px; overflow: hidden"
+            >
+              Nicknamed "King James", he is widely recognized as one of the
+              greatest players in the sport's history and is often compared with
+              Michael Jordan in debates over the greatest basketball player of
+              all time. James has won four NBA championships from 10 NBA Finals
+              appearances, having made eight consecutive appearances between
+              2011 and 2018. He also won the inaugural NBA Cup in 2023 with the
+              Lakers and three Olympic gold medals as a member of the U.S.
+              national team.
+            </p>
+            <span class="text-white read-more-btn cursor-pointer"
+              >Read More..</span
+            >
+            <div class="card-actions justify-center mt-4">
+              <button class="btn bg-transparent text-white hover:text-red">
+                View Stats
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Pagination-->
+      <nav aria-label="Page navigation example">
+        <ul class="flex items-center -space-x-px h-10 text-base mt-5">
+          <li>
+            <a
+              href="#"
+              class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            >
+              <span class="sr-only">Previous</span>
+              <svg
+                class="w-3 h-3 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              >1</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              >2</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-current="page"
+              class="z-10 flex items-center justify-center px-4 h-10 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
+              >3</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              >4</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              >5</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            >
+              <span class="sr-only">Next</span>
+              <svg
+                class="w-3 h-3 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!--FOOTER-->
+    <section>
+      <footer
+        class="footer footer-center bg-black text-base-content rounded p-10"
+        id="about"
+      >
+        <nav class="grid grid-flow-col gap-4">
+          <a class="link link-hover text-white">About us</a>
+          <a class="link link-hover text-white">Contact</a>
+          <a class="link link-hover text-white">Jobs</a>
+          <a class="link link-hover text-white">Press kit</a>
+        </nav>
+        <nav>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current text-white"
+              >
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                ></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current text-white"
+              >
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                ></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current text-white"
+              >
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+        <aside>
+          <p class="text-white">
+            Copyright © {new Date().getFullYear()} - All right reserved by ACME
+            Industries Ltd
+          </p>
+        </aside>
+      </footer>
+    </section>
+
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/57cada10d3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
